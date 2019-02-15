@@ -71,7 +71,7 @@ RichEditFeatureImage.prototype.openList = function () {
     });
 
 
-    remoteCall.execute(function (descriptor) {
+    remoteCall.load(function (descriptor) {
 
         var dom = $(descriptor.getHTML());
         imageList.setElement(dom);
